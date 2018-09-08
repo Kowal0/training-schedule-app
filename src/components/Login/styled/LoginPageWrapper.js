@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import myImage from './img/img1.png';
+import myImage from '../assets/img1.png';
 
 export const LoginPageWrapper = styled.div`
     display: flex;
@@ -9,7 +9,10 @@ export const LoginPageWrapper = styled.div`
     justify-content: center;
     align-itmes: center;
     position: relative;
-    background-image: url(${myImage});
+    background: url(${myImage}) no-repeat bottom center fixed;
+    background-size: cover;
+    overflow: hidden;
+    filter: grayscale(90%);
 `;
 
 export default LoginPageWrapper;

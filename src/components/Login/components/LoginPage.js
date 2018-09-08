@@ -6,9 +6,9 @@ class Login extends PureComponent {
     render(){
         return (
             <LoginPageWrapper>
-                <LoginFormWrapper>
+                {/* <LoginFormWrapper>
                     <h1>lol</h1>
-                </LoginFormWrapper>
+                </LoginFormWrapper> */}
             </LoginPageWrapper>
         );
     }
