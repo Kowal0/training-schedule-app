@@ -1,12 +1,12 @@
 import React, {PureComponent} from 'react';
+import LoginPageForm from './LoginPageForm';
 import LoginPageWrapper from '../styled/LoginPageWrapper';
-import LoginFormWrapper from '../styled/LoginFormWrapper';
 import PageHeadingWrapper from '../styled/PageHeadingWrapper';
 import PageMainHeading from '../styled/PageMainHeading';
 import PageSubHeading from '../styled/PageSubHeading';
 import PageHeadingButton from '../styled/PageHeadingButton';
 
-class Login extends PureComponent {
+export class LoginPage extends PureComponent {
     render(){
         return (
             <LoginPageWrapper>
@@ -24,12 +24,8 @@ class Login extends PureComponent {
                        Sign In
                    </PageHeadingButton>  
                 </PageHeadingWrapper>
-                <LoginFormWrapper>
-                    <h2>Join Us!</h2>
-                </LoginFormWrapper>
+                <LoginPageForm/>
             </LoginPageWrapper>
         );
     }
 }
-
-export default Login;
