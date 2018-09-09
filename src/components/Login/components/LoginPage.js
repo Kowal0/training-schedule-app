@@ -4,6 +4,7 @@ import LoginFormWrapper from '../styled/LoginFormWrapper';
 import PageHeadingWrapper from '../styled/PageHeadingWrapper';
 import PageHeadingH1 from '../styled/PageHeadingH1';
 import PageHeadingH3 from '../styled/PageHeadingH3';
+import PageHeadingButton from '../styled/PageHeadingButton';
 
 class Login extends PureComponent {
     render(){
@@ -15,7 +16,13 @@ class Login extends PureComponent {
                    </PageHeadingH3>
                    <PageHeadingH1>
                         Sign Up and let's start this great adventure of building healthy habits. On our gym it's gonna be easy and fun!
-                   </PageHeadingH1> 
+                   </PageHeadingH1>
+                   <PageHeadingButton>
+                       Sign Up
+                   </PageHeadingButton>
+                   <PageHeadingButton>
+                       Sign In
+                   </PageHeadingButton>  
                 </PageHeadingWrapper>
                 <LoginFormWrapper>
                     <h2>Join Us!</h2>

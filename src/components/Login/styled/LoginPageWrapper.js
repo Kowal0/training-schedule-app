@@ -6,7 +6,7 @@ export const LoginPageWrapper = styled.div`
     height: 100vh;
     width: 100%;
     justify-content: space-between;
-    background-color: grey;
+    background-color: #4B5559;
     // background: url(${myImage}) no-repeat bottom center fixed;
     // background-size: cover;
     // overflow: hidden;
