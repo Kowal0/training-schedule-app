@@ -3,9 +3,11 @@ import myImage from '../assets/img1.jpg';
 
 export const LoginPageWrapper = styled.div`
     display: flex;
+    position: relative;
     height: calc(100vh - 60px);
     width: 100%;
     justify-content: space-between;
+    
     background: no-repeat bottom center fixed;
     background-image: linear-gradient(
         to right bottom,
@@ -14,8 +16,6 @@ export const LoginPageWrapper = styled.div`
         url(${myImage});
     background-size: cover;
     overflow: hidden;
-    filter: grayscale(90%);
-   
     
 `;
 
