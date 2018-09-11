@@ -3,6 +3,8 @@ import LoginFormWrapper from '../styled/LoginFormWrapper';
 import LoginFormSignUp from '../styled/LoginFormSignUp';
 import LoginFormBox from '../styled/LoginFormBox';
 import LoginFormInput from '../styled/LoginFormInput';
+import LoginFormButton from '../styled/LoginFormButton';
+
 
 
 
@@ -14,12 +16,15 @@ class LoginPageForm extends PureComponent {
                     Sign Up
                 </LoginFormSignUp>
                 <LoginFormBox>
-                    <LoginFormInput>
+                    <LoginFormInput placeholder="Email">
                         
                     </LoginFormInput>
-                    <LoginFormInput>
+                    <LoginFormInput placeholder="Password">
                         
                     </LoginFormInput>
+                    <LoginFormButton>
+                        Login
+                    </LoginFormButton>
                 </LoginFormBox>
             </LoginFormWrapper>
         );
