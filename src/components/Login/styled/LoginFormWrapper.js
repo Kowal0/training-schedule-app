@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const LoginFormWrapper = styled.div`
     display: flex;
-    justify-content:center;
+    align-items: center;
+    flex-direction: column;
     height: 500px;
     width: 400px;
-    background-color: #A8A3AB;
+    background-color: #D1D1D1;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     position: absolute;
