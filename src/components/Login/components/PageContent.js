@@ -6,6 +6,15 @@ import PageSubHeading from '../styled/PageSubHeading';
 import PageHeadingButton from '../styled/PageHeadingButton';
 
 class PageHeading extends PureComponent {
+    constructor(props) {
+        super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        console.log('lol')
+    }
     render(){
         return (
         <PageHeadingWrapper>
@@ -18,7 +27,7 @@ class PageHeading extends PureComponent {
             <PageHeadingButton>
                 Sign Up
             </PageHeadingButton>
-            <PageHeadingButton>
+            <PageHeadingButton onClick={this.handleClick}>
                 Sign In
             </PageHeadingButton>
         </PageHeadingWrapper>
