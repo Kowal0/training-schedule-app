@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const PageHeadingWrapper = styled.div`
+export const PageContent = styled.div`
     flex 0 0 35%;
     align-self: center;
     padding: 12%;
@@ -10,4 +10,4 @@ export const PageHeadingWrapper = styled.div`
     font-family: "montserrat-medium", sans-serif;
 `;
 
-export default PageHeadingWrapper;
+export default PageContent;

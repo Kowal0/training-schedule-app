@@ -1,15 +1,50 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 import LoginPageForm from './LoginPageForm';
-import PageContent from './PageContent';
+import PageContent from '../styled/PageContent';
+
 import LoginPageWrapper from '../styled/LoginPageWrapper';
+import PageMainHeading from '../styled/PageMainHeading';
+import PageSubHeading from '../styled/PageSubHeading';
+import PageHeadingButton from '../styled/PageHeadingButton';
 
 
 export class LoginPage extends PureComponent {
-    render(){
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isVisible: false
+        };
+    
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+
+        this.setState({
+            isVisible: !this.state.isVisible
+        });
+    }
+
+    render() {
         return (
             <LoginPageWrapper>
-                <PageContent/>
-                <LoginPageForm/>
+                <PageContent>
+                    <PageSubHeading>
+                        Welcome to FitHabit
+                    </PageSubHeading>
+                    <PageMainHeading>
+                        Sign Up and let's start this great adventure of building healthy habits. On our gym it's gonna be easy and fun!
+                    </PageMainHeading>
+                    <PageHeadingButton>
+                        Sign Up
+                    </PageHeadingButton>
+                    <PageHeadingButton onClick={this.handleClick}>
+                        Sign In
+                    </PageHeadingButton>
+                </PageContent>
+                <LoginPageForm showForm={this.state.isVisible}/> 
             </LoginPageWrapper>
         );
     }

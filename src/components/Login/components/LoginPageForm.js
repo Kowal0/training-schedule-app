@@ -5,28 +5,33 @@ import LoginFormBox from '../styled/LoginFormBox';
 import LoginFormInput from '../styled/LoginFormInput';
 import LoginFormButton from '../styled/LoginFormButton';
 
-
-
-
 class LoginPageForm extends PureComponent {
     render(){
         return (
-            <LoginFormWrapper>
-                <LoginFormSignUp>
-                    Sign Up
-                </LoginFormSignUp>
-                <LoginFormBox>
-                    <LoginFormInput placeholder="Email">
-                        
-                    </LoginFormInput>
-                    <LoginFormInput placeholder="Password">
-                        
-                    </LoginFormInput>
-                    <LoginFormButton>
-                        Login
-                    </LoginFormButton>
-                </LoginFormBox>
-            </LoginFormWrapper>
+        
+            <div>
+                {
+                    this.props.showForm?
+                    <LoginFormWrapper>
+                        <LoginFormSignUp>
+                        Sign Up
+                        </LoginFormSignUp>
+                        <LoginFormBox>
+                            <LoginFormInput placeholder="Email">
+                                
+                            </LoginFormInput>
+                            <LoginFormInput placeholder="Password">
+                                
+                            </LoginFormInput>
+                            <LoginFormButton>
+                                Login
+                            </LoginFormButton>
+                        </LoginFormBox>
+                    </LoginFormWrapper>    
+                        : ""
+                }
+            </div>
+        
         );
     }
 }
