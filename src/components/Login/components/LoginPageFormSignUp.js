@@ -5,7 +5,8 @@ import LoginFormBox from '../styled/LoginFormBox';
 import LoginFormInput from '../styled/LoginFormInput';
 import LoginFormButton from '../styled/LoginFormButton';
 
-class LoginPageForm extends PureComponent {
+
+class LoginPageFormSignUp extends PureComponent {
     render(){
         return (
         
@@ -14,7 +15,7 @@ class LoginPageForm extends PureComponent {
                     this.props.showForm?
                     <LoginFormWrapper>
                         <LoginFormSignUp>
-                        Sign Up
+                            Sign Up
                         </LoginFormSignUp>
                         <LoginFormBox>
                             <LoginFormInput placeholder="Email">
@@ -36,4 +37,4 @@ class LoginPageForm extends PureComponent {
     }
 }
 
-export default LoginPageForm;
+export default LoginPageFormSignUp;

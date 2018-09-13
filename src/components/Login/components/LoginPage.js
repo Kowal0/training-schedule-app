@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
-import LoginPageForm from './LoginPageForm';
+import LoginPageFormSignIn from './LoginPageFormSignIn';
+import LoginPageFormSignUp from './LoginPageFormSignUp';
 import PageContent from '../styled/PageContent';
 
 import LoginPageWrapper from '../styled/LoginPageWrapper';
@@ -37,14 +38,16 @@ export class LoginPage extends PureComponent {
                     <PageMainHeading>
                         Sign Up and let's start this great adventure of building healthy habits. On our gym it's gonna be easy and fun!
                     </PageMainHeading>
-                    <PageHeadingButton>
+                    <PageHeadingButton onClick={this.handleClick}>
                         Sign Up
-                    </PageHeadingButton>
+                    </PageHeadingButton >
                     <PageHeadingButton onClick={this.handleClick}>
                         Sign In
                     </PageHeadingButton>
                 </PageContent>
-                <LoginPageForm showForm={this.state.isVisible}/> 
+                <LoginPageFormSignUp showForm={this.state.isVisible}/>
+                <LoginPageFormSignIn showForm={this.state.isVisible}/> 
+
             </LoginPageWrapper>
         );
     }

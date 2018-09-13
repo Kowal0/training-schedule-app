@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+
+
 export const LoginFormWrapper = styled.div`
     display: flex;
     align-items: center;
@@ -12,6 +14,7 @@ export const LoginFormWrapper = styled.div`
     position: absolute;
     right: 18%;
     top: 20%;
+    
 `;
 
 export default LoginFormWrapper;
