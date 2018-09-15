@@ -39,14 +39,14 @@ export class LoginPage extends PureComponent {
                         Sign Up and let's start this great adventure of building healthy habits. On our gym it's gonna be easy and fun!
                     </PageMainHeading>
                     <PageHeadingButton onClick={this.handleClick}>
-                        Sign Up
+                        Get Started 
                     </PageHeadingButton >
-                    <PageHeadingButton onClick={this.handleClick}>
+                    {/* <PageHeadingButton onClick={this.handleClick}>
                         Sign In
-                    </PageHeadingButton>
+                    </PageHeadingButton> */}
                 </PageContent>
-                <LoginPageFormSignUp showForm={this.state.isVisible}/>
-                <LoginPageFormSignIn showForm={this.state.isVisible}/> 
+                {/* <LoginPageFormSignUp showForm={this.state.isVisible}/>
+                <LoginPageFormSignIn showForm={this.state.isVisible}/>  */}
 
             </LoginPageWrapper>
         );

@@ -13,7 +13,7 @@ export const LoginFormButton = styled.button`
     color: #D1D1D1;
     margin-top: 30px;
     background-color: #ba4d09;
-    transition: all .3s;
+    transition: all .4s;
     
     
     
