@@ -14,18 +14,6 @@
 
 //         this.handleClick = this.handleClick.bind(this);
 //     }
-//     /* Notka dla Maldzi!
-    
-//     Zeby zrobic super onClicka, trzeba wykorzystac stan. Fajnie by bylo, gdyby bylo to za pomoca Reduxa
-//     (bo docelowo chcemy go uzywac), ale mozna tez skorzystac z Reactowego this.state i setState.
-//     Tak czy inaczej, trzeba zrobic zmienna w stanie (np. isVisible) i dac jej domyslnie false. Ta zmienna ma byc
-//     przekazywana do komponentu form jako props i ma byc warunek, ze jesli isVisible === false, to komponent jest niewidoczny,
-//     jak true, to ma sie pojawiac. 
-
-//     :)
-    
-//     */
-
 //     // handleClick() {
     
 //     //     this.setState({

@@ -1,6 +1,4 @@
 import React, { PureComponent } from 'react';
-// import LoginPageFormSignIn from './LoginPageFormSignIn';
-// import LoginPageFormSignUp from './LoginPageFormSignUp';
 import PageContent from '../styled/PageContent';
 
 import LoginPageWrapper from '../styled/LoginPageWrapper';
@@ -19,22 +17,6 @@ import {
 
 export class LoginPage extends PureComponent {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            isVisible: false
-        };
-    
-
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-
-        this.setState({
-            isVisible: !this.state.isVisible
-        });
-    }
 
     render() {
         return (
@@ -51,13 +33,7 @@ export class LoginPage extends PureComponent {
                             Get Started 
                         </PageHeadingButton >
                     </Link>
-                    {/* <PageHeadingButton onClick={this.handleClick}>
-                        Sign In
-                    </PageHeadingButton> */}
                 </PageContent>
-                {/* <LoginPageFormSignUp showForm={this.state.isVisible}/>
-                <LoginPageFormSignIn showForm={this.state.isVisible}/>  */}
-
             </LoginPageWrapper>
         );
     }
