@@ -1,12 +1,20 @@
 import React, { PureComponent } from 'react';
-import LoginPageFormSignIn from './LoginPageFormSignIn';
-import LoginPageFormSignUp from './LoginPageFormSignUp';
+// import LoginPageFormSignIn from './LoginPageFormSignIn';
+// import LoginPageFormSignUp from './LoginPageFormSignUp';
 import PageContent from '../styled/PageContent';
 
 import LoginPageWrapper from '../styled/LoginPageWrapper';
 import PageMainHeading from '../styled/PageMainHeading';
 import PageSubHeading from '../styled/PageSubHeading';
 import PageHeadingButton from '../styled/PageHeadingButton';
+
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+    Redirect
+  } from 'react-router-dom';
 
 
 export class LoginPage extends PureComponent {
@@ -38,9 +46,11 @@ export class LoginPage extends PureComponent {
                     <PageMainHeading>
                         Sign Up and let's start this great adventure of building healthy habits. On our gym it's gonna be easy and fun!
                     </PageMainHeading>
-                    <PageHeadingButton onClick={this.handleClick}>
-                        Get Started 
-                    </PageHeadingButton >
+                    <Link to="/profile">
+                        <PageHeadingButton>
+                            Get Started 
+                        </PageHeadingButton >
+                    </Link>
                     {/* <PageHeadingButton onClick={this.handleClick}>
                         Sign In
                     </PageHeadingButton> */}

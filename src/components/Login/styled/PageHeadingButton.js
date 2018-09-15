@@ -23,17 +23,10 @@ export const PageHeadingButton = styled.button`
         letter-spacing: 6px;
         cursor: pointer;
         transform: translateY(-0.4rem);
-        box-shadow: 0 1rem 1rem rgba(153, 64, 8, 0.2);
-        &:hover::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0; }
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    
     }
 
-    &:active,
-    &:focus {
-        transform: translateY(-0.1rem);
-        box-shadow: 0 0.5rem 1rem rgba(153, 64, 8, 0.2);  
-    }
 
 `;
 
