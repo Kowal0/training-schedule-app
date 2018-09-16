@@ -1,17 +1,40 @@
-import React, {PureComponent} from 'react';
-import LoginPageWrapper from '../styled/LoginPageWrapper';
-import LoginFormWrapper from '../styled/LoginFormWrapper';
+import React, { PureComponent } from 'react';
+import PageContent from '../styled/PageContent';
 
-class Login extends PureComponent {
-    render(){
+import LoginPageWrapper from '../styled/LoginPageWrapper';
+import PageMainHeading from '../styled/PageMainHeading';
+import PageSubHeading from '../styled/PageSubHeading';
+import PageHeadingButton from '../styled/PageHeadingButton';
+
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+    Redirect
+  } from 'react-router-dom';
+
+
+export class LoginPage extends PureComponent {
+
+
+    render() {
         return (
             <LoginPageWrapper>
-                <LoginFormWrapper>
-                    <h1>lol</h1>
-                </LoginFormWrapper>
+                <PageContent>
+                    <PageSubHeading>
+                        Welcome to FitHabit
+                    </PageSubHeading>
+                    <PageMainHeading>
+                        Sign Up and let's start this great adventure of building healthy habits. On our gym it's gonna be easy and fun!
+                    </PageMainHeading>
+                    <Link to="/profile">
+                        <PageHeadingButton>
+                            Get Started 
+                        </PageHeadingButton >
+                    </Link>
+                </PageContent>
             </LoginPageWrapper>
         );
     }
 }
-
-export default Login;
