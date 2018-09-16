@@ -28,7 +28,7 @@ export class LoginPage extends PureComponent {
                     <PageMainHeading>
                         Sign Up and let's start this great adventure of building healthy habits. On our gym it's gonna be easy and fun!
                     </PageMainHeading>
-                    <Link to="/profile">
+                    <Link to={process.env.PUBLIC_URL + "/profile"}>
                         <PageHeadingButton>
                             Get Started 
                         </PageHeadingButton>
