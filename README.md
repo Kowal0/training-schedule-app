@@ -1,1 +1,0 @@
-# training-schedule-app-frontend
