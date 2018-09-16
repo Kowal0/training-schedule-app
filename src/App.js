@@ -17,9 +17,9 @@ class App extends Component {
       <Router>
         <Fragment>
           <PageNavbar/>
-          <Route path="/" exact={true} component={LoginPage} />
-          <Route path="/profile" exact={true} component={ProfilePage} />
-          <Route path="/rota" exact={true} component={RotaPage} />
+          <Route path={process.env.PUBLIC_URL + '/'} exact={true} component={LoginPage} />
+          <Route path={process.env.PUBLIC_URL + "/profile"} exact={true} component={ProfilePage} />
+          <Route path={process.env.PUBLIC_URL + "/rota"} exact={true} component={RotaPage} />
         </Fragment>
       </Router>
       

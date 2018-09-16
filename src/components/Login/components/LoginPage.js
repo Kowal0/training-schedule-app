@@ -31,7 +31,7 @@ export class LoginPage extends PureComponent {
                     <Link to="/profile">
                         <PageHeadingButton>
                             Get Started 
-                        </PageHeadingButton >
+                        </PageHeadingButton>
                     </Link>
                 </PageContent>
             </LoginPageWrapper>
