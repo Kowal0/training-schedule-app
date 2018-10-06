@@ -1,17 +1,33 @@
 import React, { PureComponent } from 'react';
 
-import ProfilePageStyle from '../styled/ProfilePage';
+import ProfilePageHeader from '../styled/ProfilePageHeader';
+import ProfilePageWrapper from '../styled/ProfilePageWrapper';
+import ProfileSliderDate from '../styled/ProfileSliderDate';
+import ProfileArrow from '../styled/ProfileArrow';
+import ProfileWeekDate from '../styled/ProfileWeekDate';
 
 export class ProfilePage extends PureComponent {
 
     render() {
-        const style = {margin: "0 auto"}
 
         return (
-            <ProfilePageStyle>
-                <h1 style={style}>ProfilePage</h1>
+            <ProfilePageWrapper>
+               <ProfilePageHeader>
+                    <h1>Workout Schedule</h1>
+                </ProfilePageHeader>
+                <ProfileSliderDate>
+                    <ProfileArrow>
+                        &#8249;
+                    </ProfileArrow>
+                    <ProfileWeekDate>
+                        1-10-2018 - 7-10-2018
+                    </ProfileWeekDate>
+                    <ProfileArrow>
+                        &#8250;
+                    </ProfileArrow>
+                </ProfileSliderDate> 
+            </ProfilePageWrapper>
 
-            </ProfilePageStyle>
         );
     }
 }

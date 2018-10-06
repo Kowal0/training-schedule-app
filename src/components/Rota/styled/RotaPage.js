@@ -4,7 +4,7 @@ export const RotaPageStyle = styled.div`
    
     display:flex;
     justify-content: center;
-    h1 {font-size: 70px;}
+    h1 {font-size: 100px;}
     
     
 `;
