@@ -5,6 +5,8 @@ import ProfilePageWrapper from '../styled/ProfilePageWrapper';
 import ProfileSliderDate from '../styled/ProfileSliderDate';
 import ProfileArrow from '../styled/ProfileArrow';
 import ProfileWeekDate from '../styled/ProfileWeekDate';
+import ProfilePageSchedule from '../styled/ProfilePageSchedule';
+import ProfilePageScheduleCell from '../styled/ProfilePageScheduleCell';
 
 export class ProfilePage extends PureComponent {
 
@@ -25,7 +27,15 @@ export class ProfilePage extends PureComponent {
                     <ProfileArrow>
                         &#8250;
                     </ProfileArrow>
-                </ProfileSliderDate> 
+                </ProfileSliderDate>
+                <ProfilePageSchedule>
+                    <ProfilePageScheduleCell>
+                        Godzina
+                    </ProfilePageScheduleCell>
+                    <ProfilePageScheduleCell>
+                        Poniedzialek
+                    </ProfilePageScheduleCell>
+                </ProfilePageSchedule>
             </ProfilePageWrapper>
 
         );
