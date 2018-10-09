@@ -29,12 +29,30 @@ export class ProfilePage extends PureComponent {
                     </ProfileArrow>
                 </ProfileSliderDate>
                 <ProfilePageSchedule>
-                    <ProfilePageScheduleCell>
-                        Godzina
-                    </ProfilePageScheduleCell>
-                    <ProfilePageScheduleCell>
-                        Poniedzialek
-                    </ProfilePageScheduleCell>
+                    <ProfilePageScheduleCell>Start Time</ProfilePageScheduleCell>
+                    <ProfilePageScheduleCell>Monday</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>Tuesday</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>Wednesday</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>Thursday</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>Friday</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>Saturday</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>Sunday</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>17.00</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>19.00</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
+                    <ProfilePageScheduleCell>...</ProfilePageScheduleCell>    
                 </ProfilePageSchedule>
             </ProfilePageWrapper>
 

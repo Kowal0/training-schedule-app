@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 export const ProfilePageScheduleCell = styled.div`
    
-    color: #fff;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     
 `;
 
